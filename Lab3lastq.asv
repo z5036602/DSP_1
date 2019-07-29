@@ -1,0 +1,11 @@
+n = [1:11];
+%hd = 1/pi*(-sin((3/(8*pi))*n)./(n)+(sin((3/(8*pi))*n)./(n)));
+
+hd = 
+
+Hn = [flip(hd) 0.01267 hd];
+figure();
+plot([-11:11],Hn);xlim([-11,11]);
+title('Impulse Response of FIR filter');
+xlabel('lags')
+ylabel('magnitude')
