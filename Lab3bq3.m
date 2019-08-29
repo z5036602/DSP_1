@@ -10,7 +10,7 @@ for order = 23:23
     b = firpm(order,f,a);    
     [h,w] = freqz(b,1,fs);
     hold on 
-    plot(f_axis,20*log10(abs(h)));
+    plot(w/pi,20*log10(abs(h)));
     legend('order');
 end 
 plot(1500,-1,'rx');
